@@ -1,0 +1,175 @@
+{
+ "id": "C0-S04",
+ "route": "/entrainement/c0-s04",
+ "navigation": {
+  "chapter": "C0",
+  "label": "Séance 4 — classe entière, 3 h"
+ },
+ "exercises": [
+  {
+   "id": "EX-01",
+   "title": "Décortiquer une nouvelle question de type bac",
+   "type": "reponse_bac_plan",
+   "question": "Montrez que les difficultés d’accès aux soins des étudiants nécessitent une réponse collective organisée.",
+   "instruction": "prépare les éléments de réponse à la question suivante, sans rédiger de réponse développée : « Montrez que les difficultés d’accès aux soins des étudiants nécessitent une réponse collective organisée. »",
+   "student": {
+    "guides": [
+     {
+      "title": "Repère 1 — Comprendre le verbe de consigne",
+      "options": [
+       {
+        "id": "A",
+        "text": "Décrire séparément les deux documents."
+       },
+       {
+        "id": "B",
+        "text": "Construire une démonstration courte, organisée et justifiée."
+       },
+       {
+        "id": "C",
+        "text": "Mesurer l’efficacité réelle des services de santé étudiante."
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "« Montrez » demande de construire un raisonnement organisé et justifié ; il ne demande pas une simple description",
+      "feedbackRetry": "Repars du verbe « montrez » : il faut démontrer une idée à l’aide d’informations pertinentes"
+     },
+     {
+      "title": "Repère 2 — Identifier l’objet et le contexte",
+      "options": [
+       {
+        "id": "A",
+        "text": "Objet : le budget général de l’Assurance maladie ; contexte : tous les habitants de France."
+       },
+       {
+        "id": "B",
+        "text": "Objet : les difficultés d’accès aux soins des étudiants ; contexte : les étudiants en France et les réponses collectives susceptibles de faciliter cet accès."
+       },
+       {
+        "id": "C",
+        "text": "Objet : la réussite universitaire ; contexte : les modalités d’examen."
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "L’objet porte sur l’accès aux soins des étudiants ; le contexte précise la population et l’enjeu de réponse collective",
+      "feedbackRetry": "Distingue ce dont parle la question de ce qui précise la population et la situation étudiées"
+     },
+     {
+      "title": "Repère 3 — Déterminer la phase dominante",
+      "options": [
+       {
+        "id": "A",
+        "text": "Diagnostic uniquement : il suffit de constater les difficultés."
+       },
+       {
+        "id": "B",
+        "text": "Action uniquement : il suffit d’énumérer des services."
+       },
+       {
+        "id": "C",
+        "text": "Articulation Diagnostic puis Action : caractériser les difficultés, puis présenter une réponse collective organisée."
+       }
+      ],
+      "answers": [
+       "C"
+      ],
+      "feedbackCorrect": "Il faut d’abord faire apparaître la difficulté d’accès aux soins, puis montrer en quoi une réponse collective y répond",
+      "feedbackRetry": "Ne sépare pas artificiellement le constat de la réponse : la démonstration articule Diagnostic et Action"
+     },
+     {
+      "title": "Repère 4 — Retenir les notions utiles",
+      "options": [
+       {
+        "id": "A",
+        "text": "Diagnostic"
+       },
+       {
+        "id": "B",
+        "text": "Acteur"
+       },
+       {
+        "id": "C",
+        "text": "Action"
+       },
+       {
+        "id": "D",
+        "text": "Accès aux droits"
+       },
+       {
+        "id": "E",
+        "text": "Évaluation de l’efficacité"
+       }
+      ],
+      "answers": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "feedbackCorrect": "Ces notions permettent de caractériser une difficulté, d’identifier qui agit et de présenter des modalités qui facilitent l’accès aux soins",
+      "feedbackRetry": "Choisis les notions qui servent directement la question ; l’efficacité réelle des SSE n’est pas demandée ici"
+     },
+     {
+      "title": "Repère 5 — Choisir deux informations pour un plan simple",
+      "options": [
+       {
+        "id": "A",
+        "text": "Un tiers des étudiants déclare avoir renoncé à des soins ou à des examens médicaux pour des raisons financières."
+       },
+       {
+        "id": "B",
+        "text": "Le tiers payant pratiqué dans les centres de santé évite d’avancer la part de Sécurité sociale de la consultation."
+       },
+       {
+        "id": "C",
+        "text": "Les données sur le renoncement se rapportent aux douze mois précédant l’enquête Conditions de vie des étudiants 2023."
+       },
+       {
+        "id": "D",
+        "text": "Le document 1 est publié par le SIES, service statistique du ministère chargé de l’Enseignement supérieur."
+       }
+      ],
+      "answers": [
+       "A",
+       "B"
+      ],
+      "feedbackCorrect": "A permet de justifier le constat ; B permet de justifier la réponse collective. Ces deux informations suffisent pour le plan simple proposé",
+      "feedbackRetry": "C et D sont utiles pour identifier et situer le document, mais elles ne justifient directement ni le constat ni la réponse collective. Cherche une information pour chacune des deux idées du plan"
+     }
+    ],
+    "planCards": [
+     {
+      "id": "A",
+      "text": "Caractériser les difficultés d’accès aux soins rencontrées par une partie des étudiants."
+     },
+     {
+      "id": "B",
+      "text": "Présenter des réponses collectives organisées qui peuvent faciliter cet accès."
+     },
+     {
+      "id": "C",
+      "text": "Évaluer l’efficacité des SSE à partir de résultats avant/après."
+     },
+     {
+      "id": "D",
+      "text": "Donner son avis personnel sur les consultations médicales."
+     }
+    ]
+   },
+   "grading": {
+    "acceptedPlans": [
+     [
+      "A",
+      "B"
+     ]
+    ]
+   },
+   "feedbackCorrect": "Tu as identifié le raisonnement attendu : partir d’une difficulté caractérisée puis présenter une réponse collective pertinente",
+   "feedbackRetry": "Repars de la question : il faut articuler une difficulté d’accès aux soins et une réponse collective organisée, sans évaluer une efficacité que le dossier ne mesure pas"
+  }
+ ]
+}

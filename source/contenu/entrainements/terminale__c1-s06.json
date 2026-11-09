@@ -1,0 +1,221 @@
+{
+ "id": "C1-S06",
+ "niveau": "terminale",
+ "route": "/entrainement/terminale/c1-s06",
+ "navigation": {
+  "chapter": "C1",
+  "label": "Du problème de santé aux objectifs : la lutte contre le tabagisme"
+ },
+ "exercises": [
+  {
+   "id": "EX-01",
+   "title": "Identifier l'élément du raisonnement",
+   "type": "choix_unique",
+   "instruction": "Pour chaque formulation, choisis l'élément du raisonnement auquel elle correspond.",
+   "student": {
+    "items": [
+     {
+      "id": "EX-01-I01",
+      "prompt": "Le tabagisme quotidien concerne une part importante de la population.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Problème de santé"
+       },
+       {
+        "id": "B",
+        "text": "Déterminant de santé"
+       },
+       {
+        "id": "C",
+        "text": "Besoin de santé"
+       },
+       {
+        "id": "D",
+        "text": "Objectif de santé"
+       }
+      ],
+      "answers": [
+       "A"
+      ],
+      "feedbackCorrect": "Le tabagisme est ici le problème de santé : la phrase décrit une situation observée dans une population.",
+      "feedbackRetry": "Cherche si la phrase décrit une situation observée, un facteur qui l'influence, une amélioration attendue ou un résultat mesurable."
+     },
+     {
+      "id": "EX-01-I02",
+      "prompt": "Les 25-34 ans sont davantage concernés par le tabagisme quotidien que les 45-54 ans.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Problème de santé"
+       },
+       {
+        "id": "B",
+        "text": "Déterminant de santé"
+       },
+       {
+        "id": "C",
+        "text": "Besoin de santé"
+       },
+       {
+        "id": "D",
+        "text": "Objectif de santé"
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "L'âge est ici un déterminant : il permet de distinguer des populations inégalement concernées.",
+      "feedbackRetry": "Cherche ce qui permet de comprendre pourquoi toutes les populations ne sont pas concernées de la même manière."
+     },
+     {
+      "id": "EX-01-I03",
+      "prompt": "Réduire l'exposition de la population au tabac.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Problème de santé"
+       },
+       {
+        "id": "B",
+        "text": "Déterminant de santé"
+       },
+       {
+        "id": "C",
+        "text": "Besoin de santé"
+       },
+       {
+        "id": "D",
+        "text": "Objectif de santé"
+       }
+      ],
+      "answers": [
+       "C"
+      ],
+      "feedbackCorrect": "Le besoin exprime une amélioration attendue, sans préciser encore un résultat mesurable.",
+      "feedbackRetry": "Un besoin de santé exprime l'amélioration recherchée pour la population."
+     },
+     {
+      "id": "EX-01-I04",
+      "prompt": "Abaisser à moins de 20 % la part de fumeurs quotidiens chez les adolescents de 17 ans d'ici 2022.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Problème de santé"
+       },
+       {
+        "id": "B",
+        "text": "Déterminant de santé"
+       },
+       {
+        "id": "C",
+        "text": "Besoin de santé"
+       },
+       {
+        "id": "D",
+        "text": "Objectif de santé"
+       }
+      ],
+      "answers": [
+       "D"
+      ],
+      "feedbackCorrect": "L'objectif précise un résultat attendu, une population et une échéance.",
+      "feedbackRetry": "Un objectif de santé se reconnaît à son résultat mesurable, sa population et son échéance."
+     }
+    ]
+   }
+  },
+  {
+   "id": "EX-02",
+   "title": "Transformer un besoin en objectif de santé",
+   "type": "choix_unique",
+   "instruction": "Pour chaque besoin de santé, choisis la formulation qui constitue un objectif de santé.",
+   "student": {
+    "items": [
+     {
+      "id": "EX-02-I01",
+      "prompt": "Réduire le tabagisme chez les adolescents.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Organiser une campagne au lycée."
+       },
+       {
+        "id": "B",
+        "text": "Faire passer sous 20 % la part de fumeurs quotidiens chez les adolescents de 17 ans d'ici 2022."
+       },
+       {
+        "id": "C",
+        "text": "Les jeunes adultes sont davantage concernés que les 45-54 ans."
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "L'objectif fixe un résultat mesurable pour une population et une échéance.",
+      "feedbackRetry": "Distingue l'objectif de l'action concrète et de la description d'un écart entre populations."
+     },
+     {
+      "id": "EX-02-I02",
+      "prompt": "Réduire le tabagisme dans la population adulte.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Informer la population des risques du tabac."
+       },
+       {
+        "id": "B",
+        "text": "Abaisser à moins de 16 % la part de fumeurs quotidiens chez les 18-75 ans d'ici 2027."
+       },
+       {
+        "id": "C",
+        "text": "Le tabac favorise de nombreux cancers."
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "L'objectif indique le résultat de santé attendu et l'échéance, sans dire comment agir.",
+      "feedbackRetry": "Un objectif ne se confond ni avec une action à mettre en œuvre ni avec un constat sur le tabac."
+     }
+    ]
+   }
+  },
+  {
+   "id": "EX-03",
+   "title": "Retrouver la logique du cours",
+   "type": "ordre",
+   "instruction": "Remets dans l'ordre les étapes du raisonnement travaillé pendant la séance.",
+   "student": {
+    "items": [
+     {
+      "id": "A",
+      "text": "Caractériser le problème de santé à partir de données."
+     },
+     {
+      "id": "B",
+      "text": "Repérer un déterminant qui permet de distinguer des populations inégalement concernées."
+     },
+     {
+      "id": "C",
+      "text": "Formuler le besoin de santé."
+     },
+     {
+      "id": "D",
+      "text": "Fixer un objectif de santé pour répondre au problème identifié."
+     }
+    ]
+   },
+   "grading": {
+    "expected": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ]
+   },
+   "feedbackCorrect": "Tu as retrouvé le raisonnement qui relie le diagnostic à l'objectif de santé.",
+   "feedbackRetry": "L'objectif ne se confond ni avec une action concrète ni avec le constat du problème : repars du diagnostic."
+  }
+ ]
+}

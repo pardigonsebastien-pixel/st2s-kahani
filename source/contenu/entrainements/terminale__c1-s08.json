@@ -1,0 +1,136 @@
+{
+ "id": "C1-S08",
+ "niveau": "terminale",
+ "route": "/entrainement/terminale/c1-s08",
+ "navigation": {
+  "chapter": "C1",
+  "label": "Relier intervention, déterminants, publics et objectifs"
+ },
+ "exercises": [
+  {
+   "id": "EX-01",
+   "title": "Identifier le déterminant visé",
+   "type": "association",
+   "instruction": "Associez chaque action au déterminant sur lequel elle agit le plus directement.",
+   "student": {
+    "items": [
+     {
+      "id": "A",
+      "prompt": "Prendre en charge les frais d’une consultation."
+     },
+     {
+      "id": "B",
+      "prompt": "Ouvrir une permanence de soins dans une zone éloignée des services."
+     },
+     {
+      "id": "C",
+      "prompt": "Organiser des rencontres régulières pour des personnes isolées."
+     },
+     {
+      "id": "D",
+      "prompt": "Apprendre à repérer les informations utiles sur une étiquette alimentaire."
+     }
+    ],
+    "planCards": [
+     {
+      "id": "1",
+      "text": "Déterminant économique : les ressources financières."
+     },
+     {
+      "id": "2",
+      "text": "Déterminant géographique : la proximité de l’offre de soins."
+     },
+     {
+      "id": "3",
+      "text": "Déterminant social : les relations et le soutien social."
+     },
+     {
+      "id": "4",
+      "text": "Déterminant individuel : les connaissances et les compétences."
+     }
+    ]
+   },
+   "grading": {
+    "expected": [
+     "A→1",
+     "B→2",
+     "C→3",
+     "D→4"
+    ]
+   },
+   "feedbackCorrect": "Vous avez identifié le facteur que l’action cherche à modifier, ou dont elle cherche à réduire les effets.",
+   "feedbackRetry": "Le déterminant est le facteur qui influence la santé ou l’accès à une réponse. L’action est le moyen utilisé pour intervenir sur ce facteur."
+  },
+  {
+   "id": "EX-02",
+   "title": "Distinguer constat, objectif et action",
+   "type": "choix_unique",
+   "instruction": "Quelle proposition formule un objectif répondant à cette situation ?",
+   "student": {
+    "items": [
+     {
+      "id": "EX-02-I01",
+      "prompt": "Une enquête locale montre que des habitants renoncent à consulter parce que le déplacement leur coûte trop cher.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Financer un service de transport vers les consultations."
+       },
+       {
+        "id": "B",
+        "text": "Réduire le renoncement aux consultations lié au coût du déplacement."
+       },
+       {
+        "id": "C",
+        "text": "Le coût du déplacement empêche certains habitants de consulter."
+       }
+      ],
+      "answers": [
+       "B"
+      ],
+      "feedbackCorrect": "B exprime le changement recherché. A désigne une action possible ; C présente un constat et son explication.",
+      "feedbackRetry": "Pour reconnaître l’objectif, cherchez le résultat que l’on souhaite obtenir. Le moyen concret de l’atteindre constitue une action."
+     }
+    ]
+   }
+  },
+  {
+   "id": "EX-03",
+   "title": "Comprendre la complémentarité des actions",
+   "type": "choix_multiple",
+   "instruction": "Sélectionnez les deux explications qui justifient l’association de ces actions.",
+   "student": {
+    "items": [
+     {
+      "id": "EX-03-I01",
+      "prompt": "Une enquête sur le recours au dépistage relève deux obstacles : certaines personnes comprennent mal les informations reçues ; d’autres ne peuvent pas se déplacer jusqu’au centre. Un programme propose des explications accessibles et des consultations mobiles.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Les deux actions font double emploi puisqu’elles poursuivent le même objectif."
+       },
+       {
+        "id": "B",
+        "text": "Les explications accessibles peuvent faciliter la compréhension, mais ne résolvent pas les difficultés de déplacement."
+       },
+       {
+        "id": "C",
+        "text": "Une fois les personnes informées, les difficultés de déplacement n’influencent plus leur recours au dépistage."
+       },
+       {
+        "id": "D",
+        "text": "Les consultations mobiles rapprochent le service, mais ne garantissent pas que chacun comprenne l’intérêt du dépistage."
+       }
+      ],
+      "answers": [
+       "B",
+       "D"
+      ],
+      "feedbackCorrect": "Un même objectif peut nécessiter plusieurs actions complémentaires, car la situation dépend de plusieurs déterminants.",
+      "feedbackRetry": "Comparez les obstacles : comprendre l’information et pouvoir se déplacer sont deux conditions différentes. Agir sur l’une ne suffit pas nécessairement à agir sur l’autre."
+     }
+    ]
+   }
+  }
+ ]
+}

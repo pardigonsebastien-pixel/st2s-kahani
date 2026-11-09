@@ -1,0 +1,144 @@
+{
+ "id": "C1-S07",
+ "niveau": "terminale",
+ "route": "/entrainement/terminale/c1-s07",
+ "navigation": {
+  "chapter": "C1",
+  "label": "Construire une politique de santé : des priorités aux actions"
+ },
+ "exercises": [
+  {
+   "id": "EX-01",
+   "title": "Reconstituer le processus d'une politique de santé",
+   "type": "ordre",
+   "instruction": "Remets les étapes dans l'ordre du processus de construction d'une politique de santé",
+   "student": {
+    "items": [
+     {
+      "id": "A",
+      "text": "Mettre en œuvre les actions : les coordonner, les financer et les adapter aux réalités locales."
+     },
+     {
+      "id": "B",
+      "text": "Déterminer des priorités sanitaires et fixer des objectifs."
+     },
+     {
+      "id": "C",
+      "text": "Suivre les actions, évaluer leurs résultats et les adapter si nécessaire."
+     },
+     {
+      "id": "D",
+      "text": "Élaborer un programme qui prévoit plusieurs actions cohérentes."
+     }
+    ]
+   },
+   "grading": {
+    "expected": [
+     "B",
+     "D",
+     "A",
+     "C"
+    ]
+   },
+   "feedbackCorrect": "Les objectifs sont traduits dans un programme ; les actions sont ensuite mises en œuvre, suivies, évaluées et éventuellement adaptées",
+   "feedbackRetry": "Commence par les priorités et les objectifs. Un programme organise ensuite les actions avant leur mise en œuvre, leur suivi et leur évaluation"
+  },
+  {
+   "id": "EX-02",
+   "title": "Relier un élément du PNLT à sa fonction",
+   "type": "association",
+   "instruction": "Associe chaque élément du Programme national de lutte contre le tabac à la fonction qu'il remplit dans une politique de santé",
+   "student": {
+    "items": [
+     {
+      "id": "G1",
+      "prompt": "Abaisser la part de fumeurs quotidiens chez les adolescents de 17 ans."
+     },
+     {
+      "id": "G2",
+      "prompt": "Porter progressivement le prix moyen du paquet de cigarettes à 10 euros."
+     },
+     {
+      "id": "G3",
+      "prompt": "Le fonds de lutte contre le tabac finance certaines actions."
+     },
+     {
+      "id": "G4",
+      "prompt": "Le comité de pilotage suit le déploiement des actions et leurs éventuelles adaptations."
+     }
+    ],
+    "planCards": [
+     {
+      "id": "D1",
+      "text": "Objectif de santé"
+     },
+     {
+      "id": "D2",
+      "text": "Action prévue"
+     },
+     {
+      "id": "D3",
+      "text": "Moyen de financement"
+     },
+     {
+      "id": "D4",
+      "text": "Suivi et adaptation"
+     }
+    ]
+   },
+   "grading": {
+    "expected": [
+     "G1→D1",
+     "G2→D2",
+     "G3→D3",
+     "G4→D4"
+    ]
+   },
+   "feedbackCorrect": "Tu distingues le résultat recherché, l'action concrète, le moyen qui permet d'agir et le suivi de la politique",
+   "feedbackRetry": "Un objectif décrit le résultat recherché. Une action indique ce qui est fait ; le financement et le suivi permettent de mettre en œuvre puis d'améliorer la politique"
+  },
+  {
+   "id": "EX-03",
+   "title": "Situer la démocratie sanitaire",
+   "type": "choix_multiple",
+   "instruction": "Choisis toutes les affirmations exactes",
+   "student": {
+    "items": [
+     {
+      "id": "EX-03-I01",
+      "prompt": "Parmi les affirmations suivantes, repère celles qui sont exactes.",
+      "options": [
+       {
+        "id": "A",
+        "text": "Elle associe des usagers, des professionnels et des décideurs publics."
+       },
+       {
+        "id": "B",
+        "text": "Elle intervient dans l'élaboration d'un programme et dans sa mise en œuvre."
+       },
+       {
+        "id": "C",
+        "text": "Elle signifie que les associations décident à la place des pouvoirs publics."
+       },
+       {
+        "id": "D",
+        "text": "Elle peut permettre de mieux connaître les besoins et les difficultés de certaines populations."
+       },
+       {
+        "id": "E",
+        "text": "Elle concerne uniquement les personnes hospitalisées."
+       }
+      ],
+      "answers": [
+       "A",
+       "B",
+       "D"
+      ],
+      "feedbackCorrect": "La démocratie sanitaire permet à des personnes et à des collectifs concernés de participer à l'élaboration et à la mise en œuvre d'une politique ; les pouvoirs publics gardent leur responsabilité de décision",
+      "feedbackRetry": "Reprends la définition : il s'agit d'associer des usagers, des professionnels et des décideurs publics. Cette participation ne remplace pas la décision publique et ne se limite pas à l'hôpital"
+     }
+    ]
+   }
+  }
+ ]
+}

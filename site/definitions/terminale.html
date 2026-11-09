@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Définitions STSS — Terminale</title>
+<meta name="description" content="Réviser les définitions de STSS en Terminale : un jeu pour s'entraîner et le carnet des notions.">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <a class="back" href="/">← Accueil</a><a class="switch" href="premiere.html">Je suis en Première →</a>
+    <p class="eyebrow">Terminale ST2S</p>
+    <h1>Définitions STSS</h1>
+    <p>Une notion, ta définition, le corrigé. Cinq minutes quand tu as un moment.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="tab-jeu" aria-controls="panel-jeu" aria-selected="true">Jouer</button>
+    <button role="tab" id="tab-carnet" aria-controls="panel-carnet" aria-selected="false">Carnet des notions</button>
+    <button role="tab" id="tab-progres" aria-controls="panel-progres" aria-selected="false">Mes progrès</button>
+  </nav>
+
+  <!-- JEU -->
+  <section class="panel active" id="panel-jeu" role="tabpanel" aria-labelledby="tab-jeu">
+    <div class="card no-print" id="setup">
+      <p class="eyebrow">Nouvelle partie</p>
+      <h2>Sur quoi veux-tu travailler ?</h2>
+      <fieldset class="choices" id="pool-list"><legend class="sr">Notions à travailler</legend></fieldset>
+      <p class="label">Comment veux-tu jouer ?</p>
+      <div class="seg" role="group" aria-label="Mode de jeu">
+        <button type="button" data-mode="definir" aria-pressed="true">Je définis<small>On te donne la notion, tu écris la définition</small></button>
+        <button type="button" data-mode="trouver" aria-pressed="false">Je trouve le mot<small>On te donne la définition, tu trouves la notion</small></button>
+      </div>
+      <div class="actions"><button class="btn" type="button" id="btn-start">C'est parti</button></div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="playbar no-print" id="playbar" hidden>
+      <span id="play-label"></span>
+      <button class="btn ghost small" type="button" id="btn-change">Changer de chapitre</button>
+    </div>
+    <div class="card question" id="qcard" aria-live="polite" hidden></div>
+  </section>
+
+  <!-- CARNET -->
+  <section class="panel" id="panel-carnet" role="tabpanel" aria-labelledby="tab-carnet">
+    <h1 class="print-title">Carnet des notions STSS — Terminale</h1>
+    <div class="card no-print">
+      <p class="eyebrow">Toute l'année</p>
+      <h2>Le carnet des notions</h2>
+      <p style="margin:0 0 14px">Toutes les notions de Terminale, puis tes acquis de Première. Les notions d'un chapitre s'ouvrent dès qu'on le commence ; les grisées sont à venir. Vérifie ici ce que tu as recopié dans ton livret.</p>
+      <div class="toolbar">
+        <label style="display:grid;gap:4px;font-size:.82rem;font-weight:700;color:var(--muted)" for="search">Chercher une notion
+          <input type="search" id="search" placeholder="ex. : cohésion, ARS, indicateur…" autocomplete="off">
+        </label>
+        <select id="sel-niveau" aria-label="Niveau">
+          <option value="">Tout</option><option value="T">Terminale</option><option value="P">Première</option>
+        </select>
+        <button class="btn teal" type="button" id="btn-print">Imprimer</button>
+      </div>
+    </div>
+    <div id="carnet"></div>
+  </section>
+
+  <!-- PROGRÈS -->
+  <section class="panel" id="panel-progres" role="tabpanel" aria-labelledby="tab-progres">
+    <div class="card">
+      <p class="eyebrow">Sur ce téléphone ou cet ordinateur</p>
+      <h2>Mes progrès</h2>
+      <p class="legend">Une notion est « sue » quand tu l'as réussie plusieurs fois de suite. Tes résultats restent sur cet appareil : personne d'autre ne les voit.</p>
+      <div id="progres"></div>
+      <div class="actions"><button class="btn ghost" type="button" id="btn-reset">Tout remettre à zéro</button></div>
+    </div>
+    <div class="card">
+      <p class="eyebrow">Changer de téléphone ou d'ordinateur</p>
+      <h2>Mon code de sauvegarde</h2>
+      <p class="legend">Tes résultats restent sur cet appareil. Pour les retrouver ailleurs, copie ton code et garde-le (envoie-le-toi par message, par exemple). Sur l'autre appareil, colle-le ci-dessous.</p>
+      <div class="actions"><button class="btn teal" type="button" id="btn-code">Afficher mon code</button></div>
+      <div id="code-out" hidden>
+        <textarea id="code-text" readonly rows="4"></textarea>
+        <div class="actions"><button class="btn ghost" type="button" id="btn-copy">Copier le code</button></div>
+      </div>
+      <label for="code-in" class="label" style="display:block;margin-top:16px">Récupérer mes résultats</label>
+      <textarea id="code-in" rows="3" placeholder="Colle ici ton code de sauvegarde"></textarea>
+      <div class="actions"><button class="btn ghost" type="button" id="btn-import">Récupérer</button></div>
+      <p class="legend" id="code-msg" role="status"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Comment ça marche ?</strong> Les notions que tu rates reviennent plus souvent ; celles que tu sais reviennent de temps en temps pour ne pas les oublier.</p>
+    <small id="maj"></small>
+  </footer>
+</main>
+
+<script>window.NIVEAU_STSS = "T";</script>
+<script src="notions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
