@@ -127,3 +127,6 @@ footer p { margin: 4px 0; } footer small { color: #cfe4e2; }
 .tag.bac { background: var(--coral-pale); color: var(--ko); }
 .tag.hp { background: #eef0f1; color: var(--muted); }
 @media print { .tag { border: 1px solid #999; background: #fff !important; color: #333 !important; } }
+.saved-note { display: block; margin-top: 2px; font-weight: 400; font-size: .78rem; color: #cfe4e2; }
+.playbar-actions { display: flex; gap: 6px; flex: none; }
+.playbar .btn.small.finish { background: var(--coral); color: #fff; }

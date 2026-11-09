@@ -209,12 +209,19 @@
       var nx = document.getElementById("btn-next"); nx.onclick = nextQuestion; nx.focus();
     }
   }
+  var session = { n: 0, ok: 0, half: 0, ko: 0, sues: [] };
   function record(r) {
     var id = current.id, b = box(id);
+    session.n++; if (r === 2) session.ok++; else if (r === 1) session.half++; else session.ko++;
     if (r === 2) b = Math.min(4, b < 0 ? 2 : b + 1); else if (r === 1) b = Math.max(1, Math.min(b, 2)); else b = 0;
     store.boxes[id] = b; store.seen++;
     if (r === 2) { store.ok++; store.streak++; store.best = Math.max(store.best, store.streak); } else store.streak = 0;
-    save(); renderStats();
+    if (b >= 3 && session.sues.indexOf(current.terme) < 0) session.sues.push(current.terme);
+    save(); renderStats(); flashSaved();
+  }
+  function flashSaved() {
+    var el = document.getElementById("saved-note"); if (!el) return;
+    el.textContent = "✓ Enregistré sur cet appareil · " + session.n + " notion" + (session.n > 1 ? "s" : "") + " aujourd'hui";
   }
 
   /* ---------- statistiques, sélection ---------- */
@@ -265,11 +272,29 @@
     var checked = box_.querySelector("input:checked"); poolKey = checked ? checked.value : "";
     box_.querySelectorAll("input").forEach(function (i) { i.onchange = function () { poolKey = i.value; }; });
   }
+  function finish() {
+    var total = OPEN.length, sues = OPEN.filter(function (n) { return box(n.id) >= 3; }).length;
+    var revoir = OPEN.filter(function (n) { var b = box(n.id); return b >= 0 && b <= 1; }).length;
+    qcard.hidden = false; document.getElementById("playbar").hidden = true;
+    qcard.innerHTML = '<p class="eyebrow">Fin de la partie</p><h2 class="q-term">' + (session.n ? "Bien joué !" : "À bientôt !") + "</h2>" +
+      (session.n ? '<div class="stats"><span class="chip">' + session.n + " notion" + (session.n > 1 ? "s" : "") + " travaillée" + (session.n > 1 ? "s" : "") + "</span>" +
+        '<span class="chip">' + session.ok + " réussie" + (session.ok > 1 ? "s" : "") + "</span>" +
+        (session.ko + session.half ? '<span class="chip coral">' + (session.ko + session.half) + " à revoir</span>" : "") + "</div>" : "") +
+      '<p style="margin:16px 0 6px"><strong>Tes résultats sont enregistrés sur cet appareil.</strong> Reviens quand tu veux : les notions ratées reviendront en priorité.</p>' +
+      '<p class="hint">En tout : ' + sues + " notion" + (sues > 1 ? "s" : "") + " sue" + (sues > 1 ? "s" : "") + " sur " + total + (revoir ? " · " + revoir + " à revoir" : "") +
+      ". Pour continuer sur un autre téléphone ou ordinateur, utilise ton code de sauvegarde (onglet « Mes progrès »).</p>" +
+      '<div class="actions"><button class="btn" type="button" id="btn-again">Nouvelle partie</button><button class="btn ghost" type="button" id="btn-prog">Voir mes progrès</button></div>';
+    session = { n: 0, ok: 0, half: 0, ko: 0, sues: [] };
+    document.getElementById("btn-again").onclick = showSetup;
+    document.getElementById("btn-prog").onclick = function () { showSetup(); document.getElementById("tab-progres").click(); };
+    document.getElementById("setup").hidden = true;
+  }
   function startGame() {
     if (!poolKey || !poolFor(poolKey).length) return;
     recent = [];
     document.getElementById("setup").hidden = true;
     document.getElementById("playbar").hidden = false; qcard.hidden = false;
+    var sn = document.getElementById("saved-note"); if (sn) sn.textContent = "Tes réponses s'enregistrent au fur et à mesure.";
     document.getElementById("play-label").textContent = poolLabel(poolKey) + " · " + (mode === "definir" ? "Je définis" : "Je trouve le mot");
     nextQuestion();
   }
@@ -280,6 +305,7 @@
   }
   document.getElementById("btn-start").onclick = startGame;
   document.getElementById("btn-change").onclick = showSetup;
+  document.getElementById("btn-finish").onclick = finish;
   document.querySelectorAll(".seg button").forEach(function (b) {
     b.onclick = function () { mode = b.dataset.mode; document.querySelectorAll(".seg button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); };
   });
