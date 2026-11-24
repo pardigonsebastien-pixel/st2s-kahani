@@ -1302,15 +1302,15 @@ window.NOTIONS_STSS = {
    "terme": "Composantes du système de protection sociale",
    "niveau": "P",
    "chapitre": "C5",
-   "definition": "La protection sociale française comprend la Sécurité sociale (protection de base), l'assurance chômage, les régimes de retraite complémentaire, la protection complémentaire (mutuelles, assurances) et l'aide sociale (État, départements).",
+   "definition": "Les composantes du système de protection sociale sont les différents mécanismes qui s'additionnent pour protéger une personne face aux risques sociaux. Ils s'articulent entre eux : certains sont de base, d'autres viennent en complément, d'autres n'interviennent qu'en dernier recours. Ex. : Sécurité sociale, complémentaire santé, aide sociale.",
    "cles": [
-    "securite sociale",
-    "complementaire|mutuelle",
-    "aide sociale|assistance",
-    "chomage|retraite"
+    "mecanismes|ensemble|differents",
+    "proteg|risques sociaux",
+    "base",
+    "complement|dernier recours|subsidiaire"
    ],
-   "source": "D'après la DREES (« La protection sociale en France et en Europe »)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026",
+   "externe": false,
    "etapes": [
     4,
     5
