@@ -5,7 +5,7 @@
    Les élèves de Terminale voient toujours toutes les notions de Première (acquis).
    « etapes » (boussole STSS) et « prio » (à mobiliser au bac) ne sont affichés qu'en Terminale. */
 window.NOTIONS_STSS = {
- "maj": "2026-11-09",
+ "maj": "2026-11-24",
  "ouverts": {
   "premiere": [
    "C1",
@@ -782,8 +782,8 @@ window.NOTIONS_STSS = {
     "probabilite|risque|chance",
     "maladie|probleme de sante"
    ],
-   "source": "D'après l'OMS (définition du facteur de risque)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après l'OMS (définition du facteur de risque)",
+   "externe": false,
    "etapes": [
     2
    ],
@@ -822,8 +822,8 @@ window.NOTIONS_STSS = {
     "menace|danger",
     "rapide|urgen|reponse"
    ],
-   "source": "D'après Santé publique France (surveillance et alerte)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après Santé publique France (surveillance et alerte)",
+   "externe": false,
    "etapes": [
     1,
     4
@@ -1323,14 +1323,15 @@ window.NOTIONS_STSS = {
    "terme": "Régimes de Sécurité sociale",
    "niveau": "P",
    "chapitre": "C5",
-   "definition": "La Sécurité sociale est organisée en régimes selon l'activité professionnelle : le régime général (salariés, et depuis 2018 les indépendants), le régime agricole (MSA) et des régimes spéciaux. Le régime général est divisé en branches : maladie, accidents du travail, vieillesse, famille, autonomie, recouvrement.",
+   "definition": "Un régime de Sécurité sociale est un ensemble de règles qui fixe, pour une catégorie de personnes définie selon leur activité professionnelle, les cotisations à verser et les prestations auxquelles elles ont droit, ainsi que l'organisme qui les gère. Ex. : régime général, régime agricole (MSA), régimes spéciaux.",
    "cles": [
-    "regime general",
-    "agricole|MSA|speciaux",
-    "branche|maladie|famille|vieillesse"
+    "regles|ensemble",
+    "categorie|activite professionnelle|profession",
+    "cotisation",
+    "prestation"
    ],
-   "source": "D'après la Sécurité sociale (securite-sociale.fr)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après securite-sociale.fr",
+   "externe": false,
    "etapes": [
     5
    ],
@@ -1512,44 +1513,65 @@ window.NOTIONS_STSS = {
    "exemple": "Contre le tabac : prévention, éducation, hausse des prix, paquet neutre."
   },
   {
-   "id": "p-veille-et-securite-sanitaire",
-   "terme": "Veille et sécurité sanitaire",
+   "id": "p-veille-sanitaire",
+   "terme": "Veille sanitaire",
    "niveau": "P",
    "chapitre": "C6",
-   "definition": "La veille sanitaire consiste à surveiller en permanence l'état de santé de la population pour repérer une menace et alerter les pouvoirs publics. La sécurité sanitaire regroupe les actions qui protègent la population contre ces risques (produits de santé, alimentation, environnement).",
+   "definition": "La veille sanitaire consiste à surveiller en permanence l'état de santé de la population pour repérer une menace et alerter les pouvoirs publics.",
    "cles": [
     "surveill",
     "permanen|continu",
-    "alert|menace",
-    "proteg|risque"
+    "population",
+    "alert|menace"
    ],
-   "source": "D'après Santé publique France (missions) et le Code de la santé publique",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après Santé publique France (missions)",
+   "externe": false,
    "etapes": [
     1,
     4
    ],
    "prio": false,
-   "exemple": "Santé publique France surveille les cas de chikungunya ; l'ANSM retire un médicament dangereux."
+   "exemple": "Santé publique France surveille les cas de chikungunya à Mayotte et alerte l'ARS."
+  },
+  {
+   "id": "p-securite-sanitaire",
+   "terme": "Sécurité sanitaire",
+   "niveau": "P",
+   "chapitre": "C6",
+   "definition": "La sécurité sanitaire regroupe les actions qui protègent la population contre les risques liés aux produits de santé, à l'alimentation et à l'environnement.",
+   "cles": [
+    "proteg|protection",
+    "population",
+    "risque",
+    "produits de sante|aliment|environnement|medicament"
+   ],
+   "source": "Validé par Séb le 24/11/2026 · d'après le Code de la santé publique",
+   "externe": false,
+   "etapes": [
+    4
+   ],
+   "prio": false,
+   "exemple": "L'ANSM retire du marché un médicament dangereux."
   },
   {
    "id": "p-restauration-de-la-sante",
    "terme": "Restauration de la santé",
    "niveau": "P",
    "chapitre": "C6",
-   "definition": "La restauration de la santé regroupe les soins qui visent à guérir une personne malade ou à rétablir au mieux sa santé : diagnostic, traitement, réadaptation.",
+   "definition": "La restauration de la santé est un mode d'intervention en santé qui s'adresse aux personnes déjà malades ou blessées : elle vise à guérir, à stabiliser une maladie chronique ou à rétablir au mieux l'autonomie, par les soins curatifs, la rééducation et la réadaptation.",
    "cles": [
-    "soins",
-    "guerir|retablir|soigner",
-    "malade|traitement"
+    "malade|blesse",
+    "guerir|soigner|curati",
+    "chronique|stabilis",
+    "reeducation|readaptation|autonomie"
    ],
-   "source": "D'après le programme de Première STSS",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le programme de Première STSS",
+   "externe": false,
    "etapes": [
     4
    ],
    "prio": false,
-   "exemple": "Soigner un patient atteint du choléra à l'hôpital."
+   "exemple": "Soigner un patient atteint du choléra à l'hôpital ; suivre un patient diabétique ; rééducation après un AVC."
   },
   {
    "id": "p-droits-de-la-personne",
@@ -1825,23 +1847,6 @@ window.NOTIONS_STSS = {
    "exemple": "Les données de l'Insee sur la population de Mayotte."
   },
   {
-   "id": "p-requete",
-   "terme": "Requête",
-   "niveau": "P",
-   "chapitre": "C2",
-   "definition": "Une requête est la question formulée à un moteur de recherche ou à une base de données à l'aide de mots-clés (et parfois d'opérateurs comme ET, OU, SAUF) pour trouver des documents pertinents.",
-   "cles": [
-    "mots-cles|mots cles",
-    "moteur|base de donnees|recherche",
-    "trouver|documents"
-   ],
-   "source": "D'après le programme de Première STSS (recherche documentaire)",
-   "externe": true,
-   "etapes": [],
-   "prio": false,
-   "exemple": "« vaccination HPV ET collège ET 2023 » dans un moteur de recherche."
-  },
-  {
    "id": "p-references",
    "terme": "Références",
    "niveau": "P",
@@ -1853,8 +1858,8 @@ window.NOTIONS_STSS = {
     "titre",
     "date"
    ],
-   "source": "D'après le programme de Première STSS (recherche documentaire)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le programme de Première STSS (recherche documentaire)",
+   "externe": false,
    "etapes": [],
    "prio": false,
    "exemple": "Santé publique France, « Bulletin de santé publique Mayotte », 2024."
@@ -1960,8 +1965,8 @@ window.NOTIONS_STSS = {
     "methode|outils",
     "recueil|traitement|calendrier"
    ],
-   "source": "D'après le programme de Première STSS (démarche d'étude)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le programme de Première STSS (démarche d'étude)",
+   "externe": false,
    "etapes": [],
    "prio": false,
    "exemple": "Interroger 100 élèves du lycée par questionnaire en novembre, puis analyser les réponses."
@@ -2012,8 +2017,8 @@ window.NOTIONS_STSS = {
     "tableau|graphique|represent",
     "analys"
    ],
-   "source": "D'après le programme de Première STSS (démarche d'étude)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le programme de Première STSS (démarche d'étude)",
+   "externe": false,
    "etapes": [
     1
    ],
@@ -2066,8 +2071,8 @@ window.NOTIONS_STSS = {
     "respect",
     "consentement|confidential|anonymat|dignite"
    ],
-   "source": "D'après le programme de Première STSS",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le programme de Première STSS",
+   "externe": false,
    "etapes": [],
    "prio": false,
    "exemple": "Demander l'accord des personnes avant un entretien et garantir leur anonymat."
@@ -3145,21 +3150,21 @@ window.NOTIONS_STSS = {
    "terme": "Action sociale",
    "niveau": "T",
    "chapitre": "C5",
-   "definition": "L'action sociale vise à promouvoir l'autonomie et la protection des personnes, la cohésion sociale, l'exercice de la citoyenneté, et à prévenir les exclusions et en corriger les effets. Elle est mise en œuvre par l'État, les collectivités, les organismes de sécurité sociale et les associations.",
+   "definition": "L'action sociale regroupe les aides et les services que les collectivités, la Sécurité sociale et les associations proposent pour prévenir les difficultés et favoriser l'autonomie et l'insertion des personnes. Contrairement à l'aide sociale, elle est facultative et adaptée aux besoins locaux.",
    "cles": [
-    "autonomie|protection",
-    "cohesion|citoyennete",
-    "exclusion|prevenir",
-    "Etat|collectivites|associations"
+    "aides|services",
+    "collectivite|securite sociale|association",
+    "prevenir|autonomie|insertion",
+    "facultati"
    ],
-   "source": "D'après le Code de l'action sociale et des familles (art. L116-1)",
-   "externe": true,
+   "source": "Validé par Séb le 24/11/2026 · d'après le Code de l'action sociale et des familles",
+   "externe": false,
    "etapes": [
     4,
     5
    ],
    "prio": true,
-   "exemple": "Le département accompagne les familles en difficulté ; une association gère un foyer d'hébergement."
+   "exemple": "Le CCAS d'une commune offre des repas aux personnes âgées isolées ; une association gère un foyer d'hébergement."
   },
   {
    "id": "t-dispositif",
